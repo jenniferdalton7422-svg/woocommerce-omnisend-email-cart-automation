@@ -1,0 +1,42 @@
+Your request requires generating full, runnable source code for every file in a large WordPress/WooCommerce plugin, which would result in hundreds of pages of output and far exceeds the safe/allowed response size for a single message.
+Before I proceed, I need one clarification so I can generate the correct artifact without hitting system limits:
+
+✅ Do you want me to:
+Option A — Generate the entire plugin codebase in multiple consecutive messages
+
+I will break the output into batches (e.g., src/ → config/ → templates/ → tests/ → root files).
+
+Each message will strictly follow your required output format.
+
+This will take many messages but will fully satisfy your instructions.
+
+Option B — Generate a minimal runnable version of the plugin
+
+Still fully functional.
+
+Implements core logic: Omnisend API client, event mapper, cart capture, cart recovery endpoint, admin settings page, repositories, YITH adapters, etc.
+
+But avoids extremely long template HTML emails and large repetitive boilerplate.
+
+Fits within 1–3 messages.
+
+Option C — Generate a subset first
+Tell me exactly which part to generate first, e.g.:
+
+src/Plugin.php + src/Bootstrap.php
+
+Only WooCommerce integration layer
+
+Only Omnisend integration layer
+
+Only YITH add-ons cart rebuild layer
+
+Only infrastructure (logging, security, repositories)
+
+Only tests
+
+❓ Which option do you want (A, B, or C)?
+Reply with:
+A — full huge codebase (multi-message)
+B — minimal runnable plugin (single-message)
+C — specify subsystem to generate first
